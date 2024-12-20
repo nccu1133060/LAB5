@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Tracker</title>
+    <link rel="stylesheet" href="113306076_Lab5.css">
+</head>
+<body>
+    <h1>Grade Tracker</h1>
+
+    <form id="gradeForm">
+        <label for="mathGrade">Math Grade:</label>
+        <input type="number" id="mathGrade" name="mathGrade" required>
+
+        <label for="englishGrade">English Grade:</label>
+        <input type="number" id="englishGrade" name="englishGrade" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <table id="gradesTable" border="1">
+        <thead>
+            <tr>
+                <th>Math Grade</th>
+                <th>English Grade</th>
+                <th>Average</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically added here -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="mathAverage">Math Avg:</td>
+                <td id="englishAverage">English Avg:</td>
+                <td id="overallAverage">Overall Avg:</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="113306076_Lab5.js"></script>
+</body>
+</html>
